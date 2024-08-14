@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>
+        Negative animation delay.
+    </title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            /* Animation Short Hand Property:
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+            The above can be written as: animation: example 5s linear 2s infinite alternate; */
+
+            position: relative;
+            animation-name: moving;
+            animation-duration: 4s;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+
+            /* Negative iteration-delay will remove the first -(-seconds) of the animation. */
+            /* animation-delay: -2s; */
+            animation-delay: 0s;
+
+
+            /* animation-iteration-count can be any number or infinite. It is the number of times you want the animation to be repeated */
+            animation-iteration-count: infinite;
+
+            /* The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. */
+            /* animation-direction: normal;  */
+            /*The animation is played as normal (forwards). This is default*/
+            /* animation-direction: reverse;  */
+            /*The animation is played in reverse direction (backwards)*/
+            /* animation-direction: alternate;  */
+            /*The animation is played forwards first, then backwards*/
+            animation-direction: alternate-reverse; 
+            /* The animation is played backwards first, then forwards*/
+
+            
+
+        }
+
+        @keyframes moving {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 100px;
+                top: 0px;
+            }
+
+            50% {
+                left: 100px;
+                top: 100px;
+            }
+
+            75% {
+                left: 0px;
+                top: 100px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div> OOO </div>
+    <P>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam veritatis, deserunt ipsa consectetur
+        in explicabo. Explicabo repellat, dolorem magnam eos blanditiis aspernatur saepe quis autem ipsa quam beatae
+        illum.
+        Minus eligendi quidem debitis cumque atque similique veritatis harum, quisquam officiis suscipit perspiciatis
+        modi animi cupiditate! Velit tempora aliquam quos, illum expedita quis ab officia commodi ipsum. Sint,
+        perspiciatis quis!
+        Assumenda vero, perferendis, ut cupiditate maxime, illum nemo ab dolore neque error eos nulla et minima fugit?
+        Itaque necessitatibus sapiente, amet, illo, placeat voluptate nihil consequatur cupiditate quidem nostrum
+        obcaecati?
+    </P>
+</body>
+
+</html>

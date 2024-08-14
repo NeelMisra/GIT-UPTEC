@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Animation 2.
+        </title>
+
+        <style>
+            div{
+                width:100px;
+                height:100px;
+                background-color: red;
+                animation-name: hello;
+                animation-duration: 8s;
+            }
+            @keyframes hello{
+                /* 0% to 100% means change in element from 0% time to when 100% time is complete. */
+                /* if any of the below is commented out, it will be skipped */
+                /* after the animation is finished the element goes back to its original style. */
+                0% {background-color: red;}
+                25%{background-color: blue;}
+                /* 50%{background-color: black;} */
+                75%{background-color: green;}
+                100%{background-color:aqua;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> This is an animated website.</h1>
+        <div></div>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi itaque ratione voluptatem laborum. Iure officiis praesentium quisquam velit! Culpa est pariatur tenetur esse repudiandae eos voluptatem voluptas, sequi neque aut!
+        Modi aperiam odit amet in, officia sapiente ratione fuga? Culpa rem, consequatur unde mollitia rerum doloremque sed, totam eos debitis consectetur minima assumenda, alias id adipisci! Aliquam sint laboriosam pariatur.
+        </p>
+    </body>
+
+
+</html>

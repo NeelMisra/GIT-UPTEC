@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Animation 1.
+        </title>
+
+        <style>
+            div{
+                width:100px;
+                height:100px;
+                background-color:red;
+                animation-name: example;
+                animation-duration: 15s;                
+            }
+            @keyframes example{
+                /* from and to means change of animation from 0% to 100% of the time duration. */
+                from{background-color:black;}
+                /* if the below line is commented out color changes from black to red in the duration of the animation. */
+                to{background-color:yellow;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> This is an animated web page.</h1>
+        <div></div>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex corrupti temporibus, ipsam eaque mollitia, error, ipsa quidem commodi iste minima eos sint perferendis laboriosam similique autem. Odit enim officia magni?
+        </p>
+    </body>
+</html>

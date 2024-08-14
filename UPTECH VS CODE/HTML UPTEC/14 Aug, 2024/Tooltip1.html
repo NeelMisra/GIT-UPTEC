@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title> Tootltip. </title>
+    
+    <style>
+        .tooltip{
+            position:relative;
+            display: inline-block;
+            border-bottom: 1px dotted blue;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width:120px;
+            background-color: black;
+            color: purple;
+            text-align:center;
+            border-radius: 6px;
+            padding: 5px 0;
+            /* position the tooltip */
+            position:absolute;
+            z-index: 1;
+            /* top:-5px;
+            left:105%; */
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h2> Basic Tooltip</h2>
+    <p>Move the mouse over the text below:</p>
+
+    <div class="tootltip">
+        Hover over me 
+        <span class="tooltiptext"> Tooltip Text</span>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt obcaecati quia sed! Nam perferendis non quibusdam, sunt voluptatibus quis cumque minus alias maiores, consequatur omnis esse! Dolorem, voluptates animi.
+    Recusandae ut ullam incidunt! Modi saepe dolore rem odio. Eveniet cupiditate esse illum totam recusandae, obcaecati repellat velit modi sapiente quam corporis ipsa labore, excepturi quas impedit earum distinctio nulla.
+    Quibusdam rem eos voluptate soluta sequi. Officia, modi culpa, illo exercitationem saepe inventore deleniti quae deserunt, recusandae nihil molestias at repudiandae consequatur laboriosam eveniet hic quas maiores architecto doloremque non.</p>     
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <Title> Hover and Pseudo Element Selector</Title>
+
+        <style>
+            h2:hover{
+                background-color: pink;
+            }
+            p::first-line {
+                background-color: goldenrod;
+            }
+            h1::first-letter{
+                background-color: cyan;
+            }
+            .first::first-line{
+                background-color: blueviolet;
+            }
+            .Second::first-letter{
+                background-color: brown;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1> This is an HTML code to check Hover and Pseudo Element Selector first-line and first letter.</h1>
+
+        <h2> Hover over this code and see the change.</h2>
+
+        <p> 
+            the first line changes color. <br />
+            this is the second line. <br />
+            Hello! First Word change here.
+        </p>
+
+        <p class="First"> 
+            the first line changes color. <br />
+            this is the second line. <br />
+            Hello! First Word change here.
+        </p>
+
+        <p class="Second"> 
+            the first line changes color. <br />
+            this is the second line. <br />
+            Hello! First Word change here.
+        </p>
+    </body>
+</html>
